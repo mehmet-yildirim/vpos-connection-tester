@@ -1,0 +1,31 @@
+html, body {
+    min-height: 100%;
+    height: auto !important; /* cross-browser */
+    height: 100%; /* cross-browser */
+}
+
+.fill-height {
+
+}
+
+.content-wrapper {
+    padding-left: 250px;
+}
+
+.sidebar-wrapper {
+    position: fixed;
+    left: 250px;
+    background: #ccc;
+    margin-left: -250px;
+    overflow-y: auto;
+    bottom: 0;
+}
+
+.sidebar {
+    position: absolute;
+    width: 250px;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}

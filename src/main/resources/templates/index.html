@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8"/>
+    <title>Vakıfbank Bağlantı Test Uygulaması</title>
+</head>
+<body>
+<div class="container">
+    <h2>TTNET VPOS Vakıfbank Bağlantı Kontrol Uygulaması</h2>
+    <p>Vakıfbank VPOS "CardTest" işlemi için lütfen KK bilgilerini ve üye işyeri bilgilerini giriniz.</p>
+    <form class="form-inline" action="/tester" method="POST">
+        <div>
+            <b>KK Bilgileri</b><br/>
+            <div class="form-group">
+                <input type="text" class="form-control" name="ccno" placeholder="KK No (16 Hane)"/>
+                <input type="text" class="form-control" name="ccexp" placeholder="KK SKT (YYYYAA)"/>
+                <input type="text" class="form-control" name="cvv" placeholder="CVV"/>
+            </div>
+        </div>
+        <div style="margin-top: 10px">
+            <b>Üye İşyeri Bilgileri</b><br/>
+            <div class="form-group">
+                <input type="text" class="form-control" name="merchantid" placeholder="Üye İşyeri No"/>
+                <input type="text" class="form-control" name="terminalid" placeholder="Terminal No"/>
+                <input type="text" class="form-control" name="termpasswd" placeholder="Şifre"/>
+            </div>
+        </div>
+        <div style="margin-top: 10px">
+            <div class="form-group">
+                <button class="btn" type="submit">Gönder</button>
+            </div>
+        </div>
+
+    </form>
+    <div  style="margin-top: 2em">
+        <p class="text-muted">Mehmet Yıldırım &lt;meyildirim@innova.com.tr&gt;<br/>&copy;2017 Innova Bilişim Çözümleri A.Ş. </p>
+    </div>
+</div>
+</body>
+</html>
