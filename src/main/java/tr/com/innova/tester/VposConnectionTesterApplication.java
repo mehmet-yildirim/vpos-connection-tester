@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class VposConnectionTesterApplication {
 
-	private static final String BANK_URL = "https://onlineodemetest.vakifbank.com.tr:4443/VposService/v3/Vposreq.aspx";
+	private static final String BANK_URL = "https://onlineodeme.vakifbank.com.tr:4443/VposService/v3/Vposreq.aspx";
 
 	public static void main(String[] args) {
 		SpringApplication.run(VposConnectionTesterApplication.class, args);
