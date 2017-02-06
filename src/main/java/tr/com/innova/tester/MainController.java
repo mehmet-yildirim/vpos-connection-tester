@@ -68,6 +68,7 @@ public class MainController {
                 "<Password>%s</Password>\n" +
                 "<TerminalNo>%s</TerminalNo>\n" +
                 "<TransactionType>CardTest</TransactionType>\n" +
+                "<CurrencyCode>949</CurrencyCode>\n" +
                 "<ClientIp>127.0.0.1</ClientIp>\n" +
                 "<Pan>%s</Pan>\n" +
                 "<Expiry>%s</Expiry>\n" +

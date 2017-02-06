@@ -41,6 +41,10 @@ public class VakifConnection {
             HttpsURLConnection.setDefaultHostnameVerifier(hv);
 
             URL connURL = new URL(this.url);
+
+            log.info("Specified URL: {}", connURL);
+
+
             URLConnection conn = connURL.openConnection();
 
             conn.setDoOutput(true);
